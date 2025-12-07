@@ -35,6 +35,8 @@ function App() {
     switch (op) {
       case '+':
         return firstValue + secondValue
+      case '-':
+        return firstValue - secondValue
       case '*':
         return firstValue * secondValue
       default:
@@ -75,14 +77,15 @@ function App() {
           <button className="btn-number" onClick={() => handleNumber(4)}>4</button>
           <button className="btn-number" onClick={() => handleNumber(5)}>5</button>
           <button className="btn-number" onClick={() => handleNumber(6)}>6</button>
-          <button className="btn-operation" onClick={() => handleOperation('+')}>+</button>
+          <button className="btn-operation" onClick={() => handleOperation('-')}>-</button>
           
           <button className="btn-number" onClick={() => handleNumber(1)}>1</button>
           <button className="btn-number" onClick={() => handleNumber(2)}>2</button>
           <button className="btn-number" onClick={() => handleNumber(3)}>3</button>
-          <button className="btn-operation" onClick={() => handleOperation('*')}>×</button>
+          <button className="btn-operation" onClick={() => handleOperation('+')}>+</button>
           
           <button className="btn-number btn-zero" onClick={() => handleNumber(0)}>0</button>
+          <button className="btn-operation" onClick={() => handleOperation('*')}>×</button>
           <button className="btn-equals" onClick={handleEquals}>=</button>
         </div>
       </div>
