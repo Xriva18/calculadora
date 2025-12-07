@@ -142,6 +142,7 @@ button:active::before {
     0 4px 15px rgba(0, 255, 100, 0.3),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
   text-shadow: 0 0 10px rgba(0, 255, 100, 0.6);
+  grid-column: span 2;
 }
 
 .btn-equals:hover {
