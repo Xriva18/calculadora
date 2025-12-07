@@ -36,7 +36,7 @@ function App() {
       case '+':
         return firstValue + secondValue
       case '*':
-        return firstValue + secondValue
+        return firstValue * secondValue
       default:
         return secondValue
     }
