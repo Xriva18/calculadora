@@ -181,9 +181,6 @@ button:active::before {
   transform: translateY(0);
 }
 
-.btn-zero {
-  grid-column: span 2;
-}
 
 @media (max-width: 480px) {
   .calculator {
